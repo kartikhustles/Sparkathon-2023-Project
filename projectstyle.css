@@ -16,6 +16,7 @@ body {
 }
 
 #body-header {
+  margin-top: 20px;
   height: 100vh;
   width: 100vw;
   opacity: 0.9;
@@ -41,7 +42,9 @@ body {
 .horizontal-list {
   list-style: none;
   padding-left: 0px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .horizontal-list li {
@@ -64,6 +67,17 @@ nav {
   font-size: 2vw;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   align-items: center;
+}
+
+#Drop-In-Button {
+  font-weight: 600;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  background: #fbc43c;
+  margin: 1.5rem;
 }
 
 /* whole sections */
@@ -152,4 +166,236 @@ section:nth-child(2n + 1) {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 20px;
+}
+
+/* Contact Section */
+
+#contact {
+  width: 100%;
+}
+
+.mb-blue {
+  background-color: #2857a4;
+}
+
+.mb-orange {
+  background-color: #ec4d1c;
+}
+
+.mb-teal {
+  background-color: #0b8176;
+}
+
+.mb-light-cyan {
+  background-color: #1ac2d8;
+}
+
+.mb-pink {
+  background-color: #f115c2;
+}
+
+.mb-red {
+  background-color: #d11f1f;
+}
+
+.mb-lime {
+  background-color: #29626d;
+}
+
+.mb-light-purple {
+  background-color: #7300ff;
+}
+
+#contact {
+  background-color: #0abcf9;
+  background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+  color: white;
+  padding-bottom: 40px;
+}
+
+#contact h1 span {
+  color: white;
+}
+
+#contact-form {
+  margin-left: 20%;
+}
+
+#contact-container {
+  display: flex;
+}
+
+#contact-form-container {
+  width: 50%;
+}
+
+#contact-form input,
+textarea {
+  max-width: 90%;
+  margin: 15px;
+  padding: 4px 10px;
+  border: 0px solid transparent;
+  border-bottom: 2px solid white;
+  color: #d9dcdd;
+  background: transparent;
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+  background: transparent;
+  font-size: 0.95rem;
+  border: 2px solid white;
+  margin-top: 5%;
+  margin-left: 35%;
+  border-radius: 2px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.8em 0.8em 0.78em;
+  text-transform: uppercase;
+}
+
+#contact-form button:hover {
+  background: white;
+  color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+  font-size: 1.2rem;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 572px) {
+  .timeline-box {
+    width: 100%;
+    left: 10% !important;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline-box {
+    width: 90%;
+    left: 10% !important;
+  }
+
+  .timeline-box::after {
+    left: -9.3% !important;
+  }
+
+  #timeline-divider {
+    top: 10%;
+    left: 2%;
+  }
+
+  #contact-form {
+    margin-left: 0%;
+  }
+
+  #contact-container {
+    flex-wrap: wrap;
+  }
+
+  #my-details-container {
+    width: 80%;
+    margin: 10%;
+  }
+
+  #contact-form-container {
+    width: 80%;
+    margin: 10%;
+  }
+}
+
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  font-weight: 400;
+}
+
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  font-weight: 700;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+#my-details-container {
+  width: 35%;
+  margin-left: 6%;
+}
+
+#my-details-container h3 {
+  color: white;
+  margin-top: 40px;
+  font-weight: 550;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+#my-details-container p {
+  color: #d9dcdd;
+  font-size: 0.9rem;
+}
+
+.my-details-info-container {
+  margin-bottom: 20px;
+  color: #d9dcdd;
+  font-size: 1rem;
+}
+
+.my-details-info-container i {
+  color: white;
+}
+
+.my-details-icon {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: bottom;
+  margin-right: 0.5rem;
+}
+
+#name-social-container {
+  margin-top: 20vh;
+  text-align: center;
+}
+
+#contact-heading {
+  display: flex;
+  justify-content: center;
+}
+
+#ruler {
+  margin: 2.5rem;
+  color: white;
+}
+
+#footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  opacity: 75%;
+  letter-spacing: 2px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
