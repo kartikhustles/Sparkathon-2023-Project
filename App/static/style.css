@@ -42,3 +42,12 @@ textarea {
   line-height: 1.6;
   font-size: 1.05rem;
 }
+
+#prediction-result {
+  font-size: 1.5vw;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+}

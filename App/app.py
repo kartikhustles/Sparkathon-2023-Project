@@ -28,5 +28,10 @@ def predict():
     prediction = model.predict(features)
     return jsonify({"prediction": prediction[0]})
 
+@app.route('/result')
+def show_result():
+    prediction = request.args.get('prediction')
+    return render_template('result.html', prediction=prediction)
+
 if __name__ == "__main__":
     app.run(debug=True)
