@@ -7,7 +7,7 @@ from sklearn.tree import DecisionTreeRegressor
 app = Flask(__name__)
 
 # Load and preprocess the data
-data = pd.read_csv(r"C:\Users\Rahul Gupta\Downloads\Product Demand Prediction with Machine Learning (1).csv")
+data = pd.read_csv(r"App/Product Demand Prediction with Machine Learning.csv")
 data = data.dropna()
 X = data[["Total Price", "Base Price"]]
 y = data["Units Sold"]

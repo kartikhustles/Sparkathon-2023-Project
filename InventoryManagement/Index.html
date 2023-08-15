@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inventory Simulation</title>
+  </head>
+  <body>
+    <h1>Inventory Simulation</h1>
+    <form method="POST">
+      <label>For how many days do you want to run this Simulation: </label>
+      <input type="number" name="days" required /><br />
+      <label>What is the Average daily Demand: </label>
+      <input type="number" name="demand_mean" required /><br />
+      <label>What is the Maximum lead time in days: </label>
+      <input type="number" name="lead_time_max" required /><br />
+      <label>What is the Minimum lead time in days: </label>
+      <input type="number" name="lead_time_min" required /><br />
+      <label>What is the required service level (between 0.0 to 100.0): </label>
+      <input
+        type="number"
+        name="asl"
+        step="0.01"
+        min="0"
+        max="100"
+        required
+      /><br />
+      <input type="submit" value="Run Simulation" />
+    </form>
+  </body>
+</html>
