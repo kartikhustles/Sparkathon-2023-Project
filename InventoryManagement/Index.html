@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventory Simulation</title>
+    <link rel="icon" href="../Images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Inventory Simulation</h1>
-    <form method="POST">
-      <label>For how many days do you want to run this Simulation: </label>
-      <input type="number" name="days" required /><br />
-      <label>What is the Average daily Demand: </label>
-      <input type="number" name="demand_mean" required /><br />
-      <label>What is the Maximum lead time in days: </label>
-      <input type="number" name="lead_time_max" required /><br />
-      <label>What is the Minimum lead time in days: </label>
-      <input type="number" name="lead_time_min" required /><br />
-      <label>What is the required service level (between 0.0 to 100.0): </label>
-      <input
-        type="number"
-        name="asl"
-        step="0.01"
-        min="0"
-        max="100"
-        required
-      /><br />
-      <input type="submit" value="Run Simulation" />
-    </form>
+    <h3 id="header3">Inventory Simulation</h3>
+    <div id="form">
+      <form method="POST">
+        <div>
+          <p>
+            <!-- <label>For how many days do you want to run this Simulation: </label> -->For
+            how many days do you want to run this Simulation:
+            <input type="number" name="days" required /><br />
+          </p>
+        </div>
+        <div>
+          <p>
+            What is the Average daily Demand:
+            <input type="number" name="demand_mean" required /><br />
+          </p>
+        </div>
+        <div>
+          <p>
+            What is the Maximum lead time in days:
+            <input type="number" name="lead_time_max" required /><br />
+          </p>
+        </div>
+        <div>
+          <p>
+            What is the Minimum lead time in days:
+            <input type="number" name="lead_time_min" required /><br />
+          </p>
+        </div>
+        <div>
+          <p>
+            What is the required service level (between 0.0 to 100.0):
+            <input
+              type="number"
+              name="asl"
+              step="0.01"
+              min="0"
+              max="100"
+              required
+            /><br />
+          </p>
+        </div>
+        <button id="Submit-Button" type="button">Predict</button>
+      </form>
+    </div>
   </body>
 </html>
