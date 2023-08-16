@@ -1,0 +1,65 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.9;
+  /* background-color: whitesmoke; */
+  background-image: url(../Images/teamsuccess.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#header3 {
+  font-size: 3.5vw;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 10px;
+}
+
+#header2 {
+  margin-top: 4px;
+  font-size: 2.5vw;
+  font-weight: 650;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 10px;
+}
+
+#subheader2 {
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 10px;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(117, 117, 117);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}

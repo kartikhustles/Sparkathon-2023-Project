@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis Results</title>
+</head>
+<body>
+    <h1>Types of Customers:</h1>
+    <ul>
+        {% for customer_type in types_of_customers %}
+            <li>{{ customer_type }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Number of Customers:</h1>
+    <table>
+        <tr>
+            <th>Customer Type</th>
+            <th>Total Customers</th>
+        </tr>
+        {% for row in number_of_customers.iterrows() %}
+            <tr>
+                <td>{{ row[1]['Customer Type'] }}</td>
+                <td>{{ row[1]['Total Customers'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Distribution of Customers:</h2>
+    <img src="data:image/png;base64,{{ pie_chart1 }}" alt="Pie Chart 1">
+
+    <h2>Sales Per Customer Category:</h2>
+    <img src="data:image/png;base64,{{ pie_chart2 }}" alt="Pie Chart 2">
+    <img src="data:image/png;base64,{{ bar_chart1 }}" alt="Bar Chart 1">
+
+    <h2>Sorted Repeat Customers:</h2>
+    <table>
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Segment</th>
+            <th>Total Orders</th>
+        </tr>
+        {% for row in sorted_repeat_customers.iterrows() %}
+            <tr>
+                <td>{{ row[1]['Customer ID'] }}</td>
+                <td>{{ row[1]['Customer Name'] }}</td>
+                <td>{{ row[1]['Segment'] }}</td>
+                <td>{{ row[1]['Total Orders'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Add other visualization results here -->
+
+</body>
+</html>
