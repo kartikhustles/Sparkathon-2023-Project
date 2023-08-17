@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload CSV and Analyze Data</title>
-</head>
-<body>
-    <h1>Upload a CSV File</h1>
-    <form action="/" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".csv" required>
-        <button type="submit">Upload</button>
-    </form>
-</body>
+    <link rel="icon" href="../../Images/favicon.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="../static/style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <h3 id="header3">Upload a CSV File</h3>
+    <div id="form">
+      <form action="/" method="POST" enctype="multipart/form-data">
+        <input
+          id="choose-file"
+          type="file"
+          name="file"
+          accept=".csv"
+          required
+        />
+        <button id="Submit-Button" type="submit">Upload</button>
+      </form>
+    </div>
+    <hr id="ruler" />
+  </body>
 </html>
