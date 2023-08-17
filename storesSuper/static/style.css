@@ -1,0 +1,66 @@
+#header3 {
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 30px;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+#form label {
+  font-size: 1.5vw;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#Submit-Button {
+  margin-left: 40%;
+  font-weight: 600;
+  font-size: 1.1vw;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  background: #fbc43c;
+}
+
+#form input,
+textarea {
+  max-width: 90%;
+  margin: 15px;
+  padding: 4px 10px;
+  border: 0px solid transparent;
+  /* border-bottom: 2px solid rgb(165, 165, 165); */
+  color: #000000;
+  background: transparent;
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+#prediction-result {
+  font-size: 1.5vw;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+#choose-file {
+  font-weight: 400;
+  font-size: 0.5vw;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0.5rem 1.5rem;
+}
+
+#ruler {
+  margin-top: 5vh;
+  color: grey;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Series Analysis</title>
+    <link rel="icon" href="../../Images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="../static/style.css"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+  </head>
+  <body>
+    <h3 id="header3">Time Series Analysis</h3>
+    <div id="form">
+      <form action="/" method="POST" enctype="multipart/form-data">
+        <input
+          id="choose-file"
+          type="file"
+          name="file"
+          accept=".csv"
+          required
+        />
+        <button id="Submit-Button" type="submit">Upload CSV</button>
+      </form>
+    </div>
+    <hr id="ruler" />
+    <div id="result">
+      <div>
+        <div id="centre">{% for plot_url in plot_urls %}</div>
+        <div id="centre">
+          <img src="data:image/png;base64,{{ plot_url }}" alt="Plot" />
+        </div>
+        <div id="centre">{% endfor %}</div>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>

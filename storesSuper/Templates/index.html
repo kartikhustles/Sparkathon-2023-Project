@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analysis Dashboard</title>
+    <link rel="icon" href="../../Images/favicon.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="../static/style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <h3 id="header3">Data Analysis Dashboard</h3>
+    <div id="form">
+      <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload CSV File:</label>
+        <input
+          id="choose-file"
+          type="file"
+          name="file"
+          accept=".csv"
+          required
+        />
+        <button id="Submit-Button" type="submit">Upload and Analyze</button>
+      </form>
+    </div>
+    <hr id="ruler" />
+
+    {% if plot_urls %}
+    <h3 id="header3">Plots and Tables:</h3>
+    <div id="center">
+      <div>{% for url in plot_urls %}</div>
+      <div>
+        <img src="data:image/png;base64,{{ url }}" alt="Plot" />
+      </div>
+      <br /><br />
+      <div>{% endfor %} {% endif %}</div>
+    </div>
+  </body>
+</html>

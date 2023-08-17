@@ -10,7 +10,7 @@ import pickle
 
 app = Flask("__name__")
 
-df_1=pd.read_csv("first_telc.csv")
+df_1=pd.read_csv("/Users/kartik19/Desktop/Project /ChurnPrediction/first_telc.csv")
 
 q = ""
 
